@@ -44,23 +44,65 @@
             </div>
         </div>
     </header>
-<main>
-    <div class="first-heading-box" >
-    <section class="section" >
-    <div class="container">
-<h1 class="main-heading">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
 
-<div class="service">
-<button data-modal-open type="button" class="service-button">Zamów usługe</button>
-<div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-    <button data-modal-close class="button-closing"><svg class="button-closing-icon" width="11px" height="11px">
-        <use href="./images/icons.svg#icon-Vector"></use>
-    </svg>
-    </button>
-    </div>
-</div>
-</div>
+<main>
+
+<div class="first-heading-box" >
+<section class="section" >
+<div class="container">
+    <h1 class="main-heading">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+
+        <div class="service">
+            <button data-modal-open type="button" class="service-button">Zamów usługe</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button data-modal-close class="button-closing">
+                            <svg class="button-closing-icon" width="11px" height="11px">
+                            <use href="./images/icons.svg#icon-Vector"></use>
+                            </svg>
+                        </button>
+                            <form name="personal_data_form" class="modal-form"> 
+                            <p class="modal-form-caption">Zostaw swoje dane w formularzu poniżej</p>
+                            <div class="user-name">
+                                <label class="modal-label">
+                                    Imie
+                                    <input
+                                    class="modal-input"
+                                    type="text"
+                                    name="full-name"/>
+                                </label>
+                            </div>
+                                <label class="modal-label">
+                                    Telefon
+                                    <input 
+                                    class="modal-input" 
+                                    type="tel" 
+                                    name="phone_number" />
+                                </label>
+                                <label class="modal-label">
+                                    E-mail
+                                    <input 
+                                    class="modal-input" 
+                                    type="email" 
+                                    name="email" />
+                                </label>
+                                <label class="modal-label">
+                                    Komentarz
+                                    <textarea 
+                                    class="modal-input2" 
+                                    name="feedback" 
+                                    rows="7" 
+                                    placeholder="Wprowadź tekst"></textarea>
+                                </label>
+                                <label class="accept" >
+                                    <input type="radio" name="accept"/>
+                                    Oświadczam iż akceptuję <a class="statue" href="/regulamin">Regulamin</a> i <a class="statue" href="polityka_prywatności">Politykę Prywatności.</a>
+                                </label>
+                                <button type="submit" class="send-modal-button">Wyślij</button>
+                            </form>
+                    </div>
+                </div>
+        </div>
 </div>
 </section>
 </div>

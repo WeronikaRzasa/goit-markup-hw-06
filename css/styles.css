@@ -238,6 +238,87 @@ header {
     cursor: pointer;
 }
 
+/*formularz w oknie modalnym*/
+
+.modal-form {
+    width: 448px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+}
+.modal-form-caption {
+    display: flex;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 1.15;
+    text-align: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 2px;
+    margin: 0;
+}
+.modal-label {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(117, 117, 117, 1);
+    line-height: 1.16;
+    text-align: start;
+}
+.modal-input {
+    height: 40px;
+    border-radius: 4px;
+    border-color: rgba(33, 33, 33, 0.2);
+    border-width: 1px;
+    padding-inline-start: 42px;
+}
+.modal-input2 {
+    border-radius: 4px;
+    border-color: rgba(33, 33, 33, 0.2);
+    border-width: 1px;
+    height: 120px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+}
+.modal-input2::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    color: rgba(117, 117, 117, 0.5);
+}
+.accept {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(117, 117, 117, 1);
+}
+.statue {
+    color: var(--brand-color);
+    cursor: pointer;
+}
+.send-modal-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--negative-color);
+    background-color: var(--brand-color);
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    margin: auto;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
 /*sekcja lorem ipsum*/
 
 .lorem-ipsum {
@@ -635,6 +716,9 @@ h3 {
     background-color: var(--brand-color);
     cursor: pointer;
 }
+
+/*blok3-zapisz się*/
+
 .footer-block3 {
     display: inline-block;
     width: 570px;
