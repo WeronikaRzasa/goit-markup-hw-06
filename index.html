@@ -61,43 +61,78 @@
                             <use href="./images/icons.svg#icon-Vector"></use>
                             </svg>
                         </button>
-                            <form name="personal_data_form" class="modal-form"> 
-                            <p class="modal-form-caption">Zostaw swoje dane w formularzu poniżej</p>
-                            <div class="user-name">
-                                <label class="modal-label">
+
+                        <form name="personal_data_form" class="modal-form"> 
+                        <p class="modal-form-caption">Zostaw swoje dane w formularzu poniżej</p>
+                        <div class="icons-space">
+                            <div class="fill-box">
+                                <label for="name" class="modal-label">
                                     Imie
+                                </label>
                                     <input
                                     class="modal-input"
                                     type="text"
-                                    name="full-name"/>
-                                </label>
+                                    name="full-name"
+                                    required/>
+                                    <svg class="modal-icon" width="12px" height="12px">
+                                        <use href="./images/icons.svg#icon-icon-name"></use>
+                                    </svg>
                             </div>
-                                <label class="modal-label">
+
+                            <div class="fill-box">
+                                <label for="phone_number" class="modal-label">
                                     Telefon
+                                </label>
                                     <input 
                                     class="modal-input" 
                                     type="tel" 
-                                    name="phone_number" />
-                                </label>
-                                <label class="modal-label">
+                                    name="phone_number" 
+                                    id="phone_number"
+                                    required/>
+                                    <svg class="modal-icon" width="13px" height="13px">
+                                        <use href="./images/icons.svg#icon-icon-phone"></use>
+                                    </svg>
+                            </div>
+
+                            <div class="fill-box">
+                                <label for="email" class="modal-label">
                                     E-mail
+                                </label>
                                     <input 
                                     class="modal-input" 
                                     type="email" 
-                                    name="email" />
-                                </label>
+                                    name="email" 
+                                    required/>
+                                    <svg class="modal-icon" width="15px" height="12px">
+                                        <use href="./images/icons.svg#icon-icon-email"></use>
+                                    </svg>
+                            </div>
                                 <label class="modal-label">
                                     Komentarz
                                     <textarea 
-                                    class="modal-input2" 
+                                    class="textarea modal-input" 
                                     name="feedback" 
                                     rows="7" 
                                     placeholder="Wprowadź tekst"></textarea>
                                 </label>
-                                <label class="accept" >
-                                    <input type="radio" name="accept"/>
-                                    Oświadczam iż akceptuję <a class="statue" href="/regulamin">Regulamin</a> i <a class="statue" href="polityka_prywatności">Politykę Prywatności.</a>
+                        </div>        
+                                <label class="checkbox" >
+                                    <input 
+                                    class="checkbox-hidden"
+                                    type="checkbox" 
+                                    name="checkbox"
+                                    required
+                                    width="16px"
+                                    height="15px"/>
+                                    <svg class="checkbox-icon" width="16px" height="15px">
+                                        <use href='./images/icons.svg#icon-icon-box'></use>
+                                    </svg>
+                                    <svg class="checkbox-icon-checked" width="16px" height="15px">
+                                        <use href="./images/icons.svg#icon-icon-check"></use>
+                                    </svg>
+                                    <div class="checkbox-text">Oświadczam iż akceptuję <a class="statue" href="/regulamin">Regulamin</a> i <a class="statue" href="polityka_prywatności">Politykę Prywatności.</a></div> 
                                 </label>
+
                                 <button type="submit" class="send-modal-button">Wyślij</button>
                             </form>
                     </div>
